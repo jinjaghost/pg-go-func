@@ -1027,4 +1027,3 @@ func scanVal(oid C.Oid, typeName string, val C.Datum, arg interface{}) error {
 	}
 	return nil
 }
-root@magus(/opt/srv/ucid/src/backend/sql-admin/functions/plgo) git:[dev] $ #
