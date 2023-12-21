@@ -17,12 +17,12 @@ var _ = fmt.Printf
 // invoked in pg using :
 //
 // CREATE OR REPLACE FUNCTION return_true(text, text) RETURNS boolean
-// AS '$PATH/functions.so', 'returnTrue'
+// AS '$PATH/functions.so', 'ReturnTrue'
 // LANGUAGE C STRICT;
 //
 
 //export returnTrue
-func returnTrue(fcinfo *funcInfo) Datum {
+func ReturnTrue(fcinfo *funcInfo) Datum {
 	// get args
 	var a string
 	var b string
