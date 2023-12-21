@@ -11,8 +11,14 @@ To successfully compile and add your functions to the library, two rules MUST be
 1) Functions must be written as part of the Go main packages.
 2) Only functions with names starting with an uppercase letter (following the Go-style convention for exported functions in a package) will be exported in the library.
 
+HOW TO WRITE FUNCTIONS
+----------------------
+
+example.go serves as a template/documentation to create function.
+
 HOW TO BUILD THE LIBRARY
 ------------------------
+
 Simply execute the command make, and any function with an uppercase starting letter in any Go file (excluding pg_cgo.go) will be incorporated into the library.
 
 CREDIT
