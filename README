@@ -1,23 +1,28 @@
-NOTE
-----
+NOTICE
+------
 
-Since pg abandoned the V0 C functions calling convention in 2018 (https://www.postgresql.org/message-id/attachment/58498/0001-Remove-left-over-fmgr-declaration.patch), it's now hard to build stored procedure using the C API from a non-C language.
-The following repo is a helper based on https://gitlab.com/microo8/plgo to easily create stored procedures in golang.
+Since PostgreSQL removed the V0 C functions calling convention in 2018 (refer to https://www.postgresql.org/message-id/attachment/58498/0001-Remove-left-over-fmgr-declaration.patch), building stored procedures using the C API from a non-C language has become challenging. The following repository serves as a helper, derived from https://gitlab.com/microo8/plgo, to facilitate the creation of stored procedures in Golang.
 
 PREREQUISITES
 -------------
 
-In order to compile and add your functions to the lib, 2 rules MUST be respected :
+To successfully compile and add your functions to the library, two rules MUST be adhered to:
 
-1/ Functions must be written as part of the go main packages.
-2/ Only ucfirst named function will be exported in the library (like go-style for exported function in a package).
+Functions must be written as part of the Go main packages.
+Only functions with names starting with an uppercase letter (following the Go-style convention for exported functions in a package) will be exported in the library.
 
-HOW TO BUILD LIB
-----------------
-
-just type `make` and any ucfirst named function in any go file (except pg_cgo.go) will be added to the lib.
+HOW TO BUILD THE LIBRARY
+------------------------
+Simply execute the command make, and any function with an uppercase starting letter in any Go file (excluding pg_cgo.go) will be incorporated into the library.
 
 CREDIT
 ------
+Credit goes to https://gitlab.com/microo8/plgo for the majority of the work.
 
-Credit to https://gitlab.com/microo8/plgo for most of the work
+
+
+
+
+
+
+
