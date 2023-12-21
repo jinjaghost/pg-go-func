@@ -23,7 +23,7 @@ var _ = fmt.Printf
 
 //export returnTrue
 func returnTrue(fcinfo *funcInfo) Datum {
-    // get args
+	// get args
 	var a string
 	var b string
 	err := fcinfo.Scan(
@@ -37,7 +37,6 @@ func returnTrue(fcinfo *funcInfo) Datum {
 		))
 	}
 
-    // do job
+	// do job
 	return toDatum(true)
 }
-
