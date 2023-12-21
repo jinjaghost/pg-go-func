@@ -9,7 +9,7 @@ PREREQUISITES
 To successfully compile and add your functions to the library, two rules MUST be adhered to:
 
 1) Functions must be written as part of the Go main packages.
-2) Only functions with names starting with an uppercase letter (following the Go-style convention for exported functions in a package) will be exported in the library.
+2) Only functions prefixed with "//export $name" will be exported into the lib.
 
 HOW TO WRITE FUNCTIONS
 ----------------------
