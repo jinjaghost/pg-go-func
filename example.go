@@ -21,7 +21,7 @@ var _ = fmt.Printf
 // LANGUAGE C STRICT;
 //
 
-//export returnTrue
+//export ReturnTrue
 func ReturnTrue(fcinfo *funcInfo) Datum {
 	// get args
 	var a string
