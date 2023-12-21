@@ -1,3 +1,8 @@
+NOTE
+----
+
+Since pg abandoned the V0 C functions calling convention in 2018 (https://www.postgresql.org/message-id/attachment/58498/0001-Remove-left-over-fmgr-declaration.patch), it's now hard to build stored procedure using the C API from a non-C language.
+The following repo is a helper based on https://gitlab.com/microo8/plgo to easily create stored procedures in golang.
 
 PREREQUISITES
 -------------
