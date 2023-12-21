@@ -1,0 +1,18 @@
+
+PREREQUISITES
+-------------
+
+In order to compile and add your functions to the lib, 2 rules MUST be respected :
+
+1/ Functions must be written as part of the go main packages.
+2/ Only ucfirst named function will be exported in the library (like go-style for exported function in a package).
+
+HOW TO BUILD LIB
+----------------
+
+just type `make` and any ucfirst named function in any go file (except pg_cgo.go) will be added to the lib.
+
+CREDIT
+------
+
+Credit to https://gitlab.com/microo8/plgo for most of the work
