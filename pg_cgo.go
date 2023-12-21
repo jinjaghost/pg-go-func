@@ -1,4 +1,3 @@
-root@magus(/opt/srv/ucid/src/backend/sql-admin/functions/plgo) git:[dev] $ # cat pg_cgo.go
 package main
 
 /*
